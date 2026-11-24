@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dizi Rafım</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><span class="mark" aria-hidden="true">▥</span> Dizi Rafım</header>
+  <main>
+    <h1>Dizi keşfet<span>.</span></h1>
+    <form role="search">
+      <label for="query">Dizi adı</label>
+      <div class="search"><input id="query" type="search" placeholder="Örn. Dark, The Office" autocomplete="off"><button>Ara</button></div>
+    </form>
+    <h2 id="heading">Keşfedilecek diziler</h2>
+    <p id="status" role="status"></p>
+    <div id="results"></div>
+  </main>
+  <footer>Dizi verileri ve afişler · <a href="https://www.tvmaze.com/">TVmaze</a> · <a href="https://github.com/public-apis/public-apis#video">GitHub API listesi</a>
+    <p><strong>Projeyi hazırlayanlar</strong><br>
+      İdil Yücel<br>
+      Betül Derya Metin<br>
+      Elif Kaner
+    </p>
+  </footer>
+</body>
+</html>
