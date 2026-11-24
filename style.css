@@ -1,0 +1,34 @@
+:root { color-scheme: dark; font-family: "DM Sans", system-ui, sans-serif; color: #f1efeb; background: #15151a; }
+* { box-sizing: border-box; }
+body { margin: auto; width: min(100% - 2.5rem, 60rem); }
+header { display: flex; align-items: center; gap: .6rem; padding: 1.5rem 0; border-bottom: 1px solid #45424a; font-weight: 750; font-size: 1.3rem; }
+.mark, h1 span { color: #e8ac75; }
+main { padding: clamp(2rem, 5vw, 4rem) 0; }
+h1, h3 { font-family: Georgia, serif; font-weight: 500; margin: 0; }
+h1 { font-size: clamp(3rem, 8vw, 6rem); letter-spacing: -.06em; }
+form { max-width: 42rem; margin: 1.6rem 0 3rem; }
+label { display: block; margin-bottom: .5rem; }
+.search { display: flex; gap: .5rem; }
+input, button { font: inherit; padding: .85rem 1rem; border-radius: .45rem; }
+input { flex: 1; min-width: 0; background: #242329; border: 1px solid #625d65; color: inherit; }
+button { background: #e8ac75; color: #23180e; border: 0; font-weight: bold; cursor: pointer; }
+:focus-visible { outline: 3px solid #ffcd99; outline-offset: 3px; }
+h2 { font-size: 1.25rem; }
+#results { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+article { border: 1px solid #45424a; background: #201f25; border-radius: .65rem; overflow: hidden; }
+article > div:last-child { padding: .9rem; }
+.poster { width: 100%; aspect-ratio: 210/295; display: grid; place-items: center; color: #bab6b3; background: #302e34; }
+.poster img { width: 100%; height: 100%; object-fit: cover; }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.65rem); overflow-wrap: anywhere; }
+@media (max-width: 50rem) {
+  #results { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 36rem) {
+  #results { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+  article > div:last-child { padding: .65rem; }
+  main { padding-top: 1.5rem; }
+  form { margin-bottom: 2rem; }
+}
+article p, footer, #status { color: #c4c0bd; }
+a { color: #e8ac75; text-underline-offset: .2em; }
+footer { padding: 1.3rem 0; border-top: 1px solid #45424a; font-size: .9rem; }
